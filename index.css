@@ -1,0 +1,440 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+   /* section 1 styling*/
+#section1{
+    background-color: #1977cc;
+    width: 100%;
+    height: 50px;
+    align-content: center;
+}
+ /* social media icon div */
+#social-media{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding-right: 20px;
+   
+}
+/* dropdown-menu */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+   /* section 3  styling*/
+#section3 {
+    background-image: url(./images/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 20px; /* Adjust padding for spacing */
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+#sub-section3 {
+    justify-content: center;
+    align-items: center;
+}
+#Section3A{
+    padding: 30px 20px 30px 10px;
+    
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+    text-align: center;
+}
+
+#section3-icon {
+    font-size: 50px; /* Adjust icon size */
+    color: #1977cc; /* Icon color */
+    display: flex;
+    justify-content: center;
+}
+#Section3button{
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
+    background-color:  rgba(255, 255, 255, 0.6);
+}
+
+#Section3button:focus{
+    color: white;
+    display: flex;
+    right: 30px;
+} 
+#Section3button:active {
+    background-color: white; /* Change background color on click */
+    color: #1977cc; /* Change text color to white */
+    outline: none; /* Remove focus outline */
+}
+#Section4{
+    justify-content: center;
+    padding: 50px 100px 50px 100px;
+    justify-items: center;
+}
+.About-image{
+    height: 400px;
+   width: 550px;
+   justify-content: center;
+}
+/* Play Icon Container */
+.play-icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+/* Play Icon */
+.play-icon {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: #1977cc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    animation: shrink-enlarge 3s infinite ease-in-out; /* Smooth enlarge and shrink animation */
+}
+
+/* Hover Effect for Play Icon */
+.play-icon-container:hover .play-icon {
+    animation: enlarge-hover 0.7s forwards; /* Enlarge on hover */
+}
+
+/* Waves Animation */
+.wave {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #1977cc;
+    border-radius: 50%;
+    animation: wave-animation 2s infinite;
+    z-index: 1;
+}
+
+/* Delay for Each Wave */
+.wave:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.wave:nth-child(3) {
+    animation-delay: 1s;
+}
+
+/* Wave Animation */
+@keyframes wave-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Play Icon Shrink and Enlarge Animation */
+@keyframes shrink-enlarge {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(2.0); /* Enlarged size */
+    }
+}
+
+/* Play Icon Enlarge on Hover */
+@keyframes enlarge-hover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(3); /* Enlarged size on hover */
+    }
+}
+/* Icon Container */
+.icon-container {
+    width: 60px;
+    height: 60px;
+    background-color: #1977cc; /* Blue background */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Icon Circle */
+.icon-circle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section6 Card Styling */
+.Section6card {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    margin-top: 60px;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    padding: 100px 20px 50px 20px;
+}
+
+/* Transparent Background Div */
+.Section6icon-container-transparent {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #7ebbf0; /* Transparent white */
+    border-radius: 8px;
+    z-index: 1;
+}
+
+/* Blue Background Div */
+.Section6icon-container {
+    position: absolute;
+    top: 46px; /* Slightly offset to show the transparent background */
+    left: calc(50% - 22px); /* Offset to the right */
+    width: 60px;
+    height: 60px;
+    background-color: #04559b; /* Blue */
+    border-radius: 8px;
+    z-index: 2;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Icon Container */
+.Section6iconsecond-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Icon */
+.Section6iconsecond-container i {
+    color: #ffffff; /* White */
+    font-size: 30px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.Section6card:hover {
+    background-color: #1977cc; /* Change card background to blue */
+}
+
+.Section6card:hover .Section6icon-container {
+    background-color: #ffffff; /* Change blue background to white */
+}
+
+.Section6card:hover .Section6iconsecond-container i {
+    color: #1977cc; /* Change icon color to blue */
+}
+
+
+/* <!-- sub-section6B --> */
+/* Add spacing between form rows */
+.row {
+    margin-bottom: 15px;
+}
+
+/* Style for the form inputs and dropdowns */
+.form-control, .form-select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Style for the submit button */
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#sub-section6Bform-button{
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+}
+
+/* Styling for the Departments List */
+ul.list-unstyled li h5 {
+    color: #2c4964;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+ul.list-unstyled li h5:hover {
+    color: #1977cc; /* Change color on hover */
+}
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+    .col-lg-4 {
+        margin-bottom: 20px; /* Add spacing between columns on smaller screens */
+    }
+}
+
+
+
+
+
+  /* Section E accordion styling */
+
+  /* Accordion Item Styling */
+.accordion-item {
+    border: 1px solid #1977cc; /* Blue border */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* Accordion Button (Default State) */
+.accordion-button {
+    background-color: white; /* Initial background */
+    color: black; /* Initial text color */
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Accordion Button (Active State) */
+.accordion-button:not(.collapsed) {
+    background-color: #1977cc; /* Blue background when toggled */
+    color: white; /* White text when toggled */
+}
+
+/* Accordion Body */
+.accordion-body {
+    background-color: #f8f9fa; /* Light gray background for body */
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Accordion Body (Active State) */
+.accordion-collapse.show .accordion-body {
+    background-color: #1977cc; /* Blue background */
+    color: white; /* White text */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .accordion-item {
+        margin-bottom: 15px;
+    }
+}
+
+
+#sub-section6F{
+    margin-top: 50px;
+}
+/* Section 6F Carosel styling */
+
+/* Carousel Indicators */
+.carousel-indicators button {
+    background-color: #1977cc; /* Blue color for indicators */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #0056b3; /* Darker blue for the active indicator */
+}
+
+/* Testimonial Image */
+.carousel-item img {
+    border: none; /* Optional border around the image */
+    padding: 5px;
+}
+
+/* Testimonial Content */
+.carousel-item h4 {
+    color: #2c4964;
+    font-weight: bold;
+}
+
+.carousel-item p {
+    color: #6c757d; /* Muted text color */
+}
+/* Ensure consistent height for carousel items */
+.carousel-inner {
+    min-height: 300px; /* Adjust as needed */
+}
+
+/* Center content vertically */
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-item img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+/* Footer Styling */
+footer {
+    color: #444444; /* Apply color to all text and icons */
+}
+
+footer p, footer i {
+    color: #444444; /* Ensure all <p> and icons take this color */
+}
+
+footer a p {
+    color: #444444; /* Ensure links also take this color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+footer a p:hover {
+    text-decoration: underline; /* Add underline on hover for links */
+}
+
+/* Responsive Styling */
+footer .col-lg-4, footer .col-lg-8 {
+    margin-bottom: 20px; /* Add spacing between columns on smaller screens */
+}
+
+footer .d-flex i {
+    transition: color 0.3s ease-in-out; /* Smooth transition for icon hover */
+}
+
+footer .d-flex i:hover {
+    color: #1977cc; /* Change icon color to blue on hover */
+}
